@@ -1,4 +1,5 @@
-package nuevos_ejemplos;
+package nuevos_ejemplos.ventana;
+
 
 /**
  *
@@ -10,16 +11,17 @@ public class Main {
       * metodo para inicializar el programa
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        
-        //creando el objeto decodificador   
-        Decodificador_ADN decodificador = new Decodificador_ADN();
-        decodificador.pedirDatos();
-        decodificador.compararSecuencias();
-        decodificador.imprimir();
-        
+
+    public static void main(String args[]) {
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(() -> {
+            new DecodificadorADN().setVisible(true);
+        });
     }
+   
 }
+
+
 
 
 
